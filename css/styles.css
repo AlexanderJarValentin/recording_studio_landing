@@ -1,8 +1,53 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 700;
+    src:url('../fonts/roboto-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-bold-webfont.woff') format('woff'); /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
+    src:url('../fonts/roboto-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-light-webfont.woff') format('woff'); /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src:url('../fonts/roboto-medium-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-medium-webfont.woff') format('woff'); /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    src:url('../fonts/roboto-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-regular-webfont.woff') format('woff'); /* Modern Browsers */
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 100;
+    src:url('../fonts/roboto-thin-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/roboto-thin-webfont.woff') format('woff'); /* Modern Browsers */
+  }
+
+ 
+
 * {
     box-sizing: border-box;
 }
+
 body {
-font-family: 'CirceRounded';
+font-family: 'Roboto';
 margin: 0; 
 }
 
@@ -16,8 +61,8 @@ a {
 }
 :root {
     --colordesc:blue;
-    --colortitle:white;
-    --backcolor:rgb(0, 255, 242);
+    --colortitle: white;
+    --backcolor:#0024A0;
 }
 
 .heading {
@@ -28,7 +73,7 @@ a {
 /*header*/
 
 .header {
-    background-color: black;
+    background-color: #0024A0;
     position: fixed;
     width: 100%;
     z-index: 900;
@@ -65,45 +110,56 @@ justify-content: space-between;
     margin-top: auto;
     margin-bottom: auto;
     font-size: 18px;
-    color: var(--colordesc);
+    color: var(--colortitle);
 }
 .header__link {
     color: var(--colortitle);
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
 }
-/*banner*/
-.banner {
 
-background: rgba( 251, 248, 248, 0.25 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6.0px );
--webkit-backdrop-filter: blur( 6.0px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+.header__burger {
+    display: none;
+  }
+/*banner*/
+/*.banner {
+
+background-color: black;
+
 }
+*/
 .banner__container {
-    
+    /*background-position-y: -269px;
+    opacity: 0.7; */
     margin-left: auto;
     margin-right: auto;
     padding-top: 150px;
-    background-image: url(../img/WhatsApp_Image_2020-.jpeg);
+   background-image: url(../img/WhatsApp_Image_2020-.jpeg);
+  /* background-color: rgba(0, 0, 0, 0.7);*/
     background-size: cover;
     background-repeat: no-repeat;
+    /*width: 3600px;*/
     height: 840px;
+    max-width: 100%;
     text-align: center;
 }
 .header__block {
-    max-width: 1240px;
+    /*max-width: 1240px;*/
+    height: -webkit-fill-available;
+    background: rgba(0, 0, 0, 0.5);
     margin-left: auto;
     margin-right: auto;
 }
 .head__block {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
     padding-top: 50px;
 }
 .head {
     color: var(--colortitle);
-    font-weight: bold;
+    font-weight: 700;
     font-size: 67px;
 } 
 .btn {
@@ -194,42 +250,42 @@ margin-right: auto;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/microphone.png);
+    background-image: url(../img/microphone.png);
 }
 .equlizer {
     height: 50px;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/equalizer.png);
+    background-image: url(../img/equalizer.png);
 }
 .equlizer-1 {
     height: 50px;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/equalizer\ \(1\).png);
+    background-image: url(../img/equalizer\ \(1\).png);
 }
 .equlizer-2 {
     height: 50px;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/equalizer-music-controller.png);
+    background-image: url(../img/equalizer-music-controller.png);
 }
 .headphones {
     height: 50px;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/headphones.png);
+    background-image: url(../img/headphones.png);
 }
 .vinyl {
     height: 50px;
     width: 50px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url(/img/vinyl-record-player.png);
+    background-image: url(../img/vinyl-record-player.png);
 }
 .work__heads {
     font-size: 30px;
@@ -316,7 +372,7 @@ article img {
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4) {
-    background: url('/img/prev.png') no-repeat;
+    background: url('../img/prev.png') no-repeat;
     float: left;
     margin: 0 0 0 -84px;
     display: block;
@@ -329,7 +385,7 @@ article img {
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
 #switch5:checked ~ #controls label:nth-child(1) {
-    background: url('/img/next.png') no-repeat;
+    background: url('../img/next.png') no-repeat;
     float: right;
     margin: 0 -84px 0 0;
     display: block;
@@ -449,7 +505,7 @@ article img {
 #switch23:checked ~ #controls-1 label:nth-child(2),
 #switch24:checked ~ #controls-1 label:nth-child(3),
 #switch25:checked ~ #controls-1 label:nth-child(4) {
-    background: url('/img/prev.png') no-repeat;
+    background: url('../img/prev.png') no-repeat;
     float: left;
     margin: 0 0 0 -84px;
     display: block;
@@ -462,7 +518,7 @@ article img {
 #switch23:checked ~ #controls-1 label:nth-child(4),
 #switch24:checked ~ #controls-1 label:nth-child(5),
 #switch25:checked ~ #controls-1 label:nth-child(1) {
-    background: url('/img/next.png') no-repeat;
+    background: url('../img/next.png') no-repeat;
     float: right;
     margin: 0 -84px 0 0;
     display: block;
@@ -566,4 +622,53 @@ label, a {
 }
 .footer__logo {
     margin: auto;
+}
+
+@media (max-width:968px) {
+    .link__head {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 23px;
+      }
+      .header__burger span {
+        background-color: var(--colortitle);
+        position:absolute;
+        width: 100%;
+        height: 2px;
+        top: 10px;
+      }
+      .header__burger::before {
+      content: '';
+      background-color:var(--colortitle);
+      position:absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 0;
+      }
+      .header__burger::after {
+        content: '';
+        background-color:var(--colortitle);
+        position:absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: 0;
+      }
+      .header__header {
+          align-items: center;
+      } 
+      .header__container {
+          height: fit-content;
+      }
+      .banner__container {
+          padding-top: 77px;
+      }
 }
