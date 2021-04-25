@@ -40,8 +40,10 @@
          url('../fonts/roboto-thin-webfont.woff') format('woff'); /* Modern Browsers */
   }
 
+ html {
+     overflow-x: hidden;
+ }
  
-
 * {
     box-sizing: border-box;
 }
@@ -191,9 +193,14 @@ background-color: black;
 }
 
 .about__item {
+    
     display: flex;
     flex-wrap: wrap;
 }
+
+.about__list {
+
+} 
 .about__sistems {
     display: flex;
 }
@@ -624,7 +631,7 @@ label, a {
     margin: auto;
 }
 
-@media (max-width:968px) {
+@media (max-width:768px) {
     .link__head {
         display: none;
     }
