@@ -90,8 +90,8 @@ margin-right: auto;
 .header__container {
 height: 150px;
 max-width: 1240px;
-padding-left: 50px;
-padding-right: 50px;
+padding-left: 5%;
+padding-right: 5%;
 }
 
 .header__header {
@@ -181,15 +181,21 @@ background-color: black;
 /*about*/
 
 .about__container {
-   max-width: 1240px;
-   padding-left: 50px;
-   padding-right: 50px;
+   max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
    text-align: center;
    align-items: center;
+   margin-left: auto;
+   margin-right: auto;
 }
 .about__block {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1160px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .about__item {
@@ -198,15 +204,12 @@ background-color: black;
     flex-wrap: wrap;
 }
 
-.about__list {
-
-} 
 .about__sistems {
     display: flex;
 }
 .about__text {
-    height: 285px;
-    width: 285px;
+    height: 290px;
+    width: 290px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -222,8 +225,8 @@ background-color: black;
 }
 
 .about__img {
-    height: 285px;
-    width: 285px;
+    height: 290px;
+    width: 290px;
     background-image: url(../img/WhatsApp_Image_2020-.jpeg);
     background-size: cover;
 }
@@ -231,14 +234,23 @@ background-color: black;
 /*work*/
 
 .work__container {
-    max-width: 1240px;
-   padding-left: 50px;
-   padding-right: 50px;
+    max-width: 1200px;
    text-align: center;
    align-items: center;
+   margin-left: auto;
+    margin-right: auto;
 }
 .block__work {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: 100%;
     margin-bottom: 35px;
+}
+
+.work__list {
+flex: 0 0 33%;
 }
 
 .work__item {
@@ -246,50 +258,52 @@ background-color: black;
     flex-wrap: wrap;
 } 
 .work__servis {
-    max-width: 380px;
+    max-width: 360px;
 }
 .work__img {
 margin-left: auto;
 margin-right: auto;
 }
 .microphone {
-    height: 50px;
-    width: 50px;
-    background-size: contain;
+    height: 80px;
+    width: 80px;
+    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center;
     background-image: url(../img/microphone.png);
 }
 .equlizer {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../img/equalizer.png);
 }
 .equlizer-1 {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../img/equalizer\ \(1\).png);
 }
 .equlizer-2 {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../img/equalizer-music-controller.png);
 }
 .headphones {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../img/headphones.png);
 }
 .vinyl {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../img/vinyl-record-player.png);
@@ -299,8 +313,11 @@ margin-right: auto;
     color: var(--backcolor);
 }
 .work__text {
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.55;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .return {
     background-repeat: no-repeat;
@@ -327,11 +344,41 @@ margin-right: auto;
 /*squad*/
 
 .squad__container {
-    max-width: 1240px;
-   padding-left: 50px;
-   padding-right: 50px;
+    max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
    text-align: center;
    align-items: center;
+}
+
+.block__squad {
+    width: 100%;
+    max-width: 1160px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list__squad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.squad__img {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/photo_2021-04-26_03-25-32.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item__squad {
+    flex: 1 1 50%;
+    text-align: -webkit-center;
+    align-items: center;
+}
+
+.squad__desc {
+    max-width: 300px;
 }
 
 /*equipment*/
@@ -379,12 +426,13 @@ article img {
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4) {
-    background: url('../img/prev.png') no-repeat;
+    background: url('../img/outline_arrow_back_ios_black_24dp.png') no-repeat;
+    background-size: 129%;
     float: left;
-    margin: 0 0 0 -84px;
+    margin: 0 0 0 -32px;
     display: block;
     height: 68px;
-    width: 68px;
+    width: 32px;
 }
 
 #switch1:checked ~ #controls label:nth-child(2),
@@ -392,12 +440,13 @@ article img {
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
 #switch5:checked ~ #controls label:nth-child(1) {
-    background: url('../img/next.png') no-repeat;
+    background: url('../img/outline_arrow_forward_ios_black_24dp.png') no-repeat;
+    background-size: 129%;
     float: right;
-    margin: 0 -84px 0 0;
+    margin: 0 -23px 0 0;
     display: block;
     height: 68px;
-    width: 68px;
+    width: 32px;
 }
 label, a {
     cursor: pointer;
@@ -512,12 +561,13 @@ article img {
 #switch23:checked ~ #controls-1 label:nth-child(2),
 #switch24:checked ~ #controls-1 label:nth-child(3),
 #switch25:checked ~ #controls-1 label:nth-child(4) {
-    background: url('../img/prev.png') no-repeat;
+    background: url('../img/outline_arrow_back_ios_black_24dp.png') no-repeat;
+    background-size: 129%;
     float: left;
-    margin: 0 0 0 -84px;
+    margin: 0 0 0 -32px;
     display: block;
     height: 68px;
-    width: 68px;
+    width: 32px;
 }
 
 #switch21:checked ~ #controls-1 label:nth-child(2),
@@ -525,12 +575,13 @@ article img {
 #switch23:checked ~ #controls-1 label:nth-child(4),
 #switch24:checked ~ #controls-1 label:nth-child(5),
 #switch25:checked ~ #controls-1 label:nth-child(1) {
-    background: url('../img/next.png') no-repeat;
+    background: url('../img/outline_arrow_forward_ios_black_24dp.png') no-repeat;
+    background-size: 129%;
     float: right;
-    margin: 0 -84px 0 0;
+    margin: 0 -23px 0 0;
     display: block;
     height: 68px;
-    width: 68px;
+    width: 32px;
 }
 label, a {
     cursor: pointer;
