@@ -653,16 +653,73 @@ label, a {
 /*contacts*/
 
 .contacts__container {
-    max-width: 1240px;
-   padding-left: 50px;
-   padding-right: 50px;
+    max-width: 1200px;
+   padding-left: 20px;
+   padding-right: 20px;
    text-align: center;
    align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+.block__contacts {
+    align-items: center;
+    margin-top: 40px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.button__contacts {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.social__link {
+    border-radius: 28px;
+    margin-bottom: 18px;
+}
+
+.telegram {
+    text-transform: capitalize;
+    padding: 20px 137px;
+    background-color: #0088cc;
+    color: white;
+    font-size: 18px;
+}
+.wathap {
+    text-transform: capitalize;
+    padding: 20px 143px;
+    background-color: #43d854;
+    color: white;
+    font-size: 18px;
+}
+.e-mail {
+    text-transform: capitalize;
+    padding: 20px 152px;
+    background-color: #2b7296;
+    color: white;
+    font-size: 16px;
+}
+.telephone {
+    text-transform: capitalize;
+    padding: 20px 118px;
+    background-color:var(--colordesc);
+    color: white;
+    font-size: 18px;
+}
+.subtitle__contacts {
+    font-size: 18px;
+    
 }
 
 /*footer*/
 
 .footer {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -670,6 +727,8 @@ label, a {
 }
 
 .footer__container {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1240px;
     height: 300px;
    padding-left: 50px;
