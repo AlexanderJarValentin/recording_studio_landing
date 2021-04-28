@@ -61,6 +61,10 @@ margin: 0;
 a {
     text-decoration: none;
 }
+h1, h2 {
+    margin-top: 0;
+}
+
 :root {
     --colordesc:blue;
     --colortitle: white;
@@ -124,29 +128,26 @@ justify-content: space-between;
     display: none;
   }
 /*banner*/
-/*.banner {
-
-background-color: black;
-
+.banner {
+    padding-bottom: 60px;
 }
-*/
+
 .banner__container {
-    /*background-position-y: -269px;
-    opacity: 0.7; */
+    
     margin-left: auto;
     margin-right: auto;
     padding-top: 150px;
    background-image: url(../img/WhatsApp_Image_2020-.jpeg);
-  /* background-color: rgba(0, 0, 0, 0.7);*/
+  
     background-size: cover;
     background-repeat: no-repeat;
-    /*width: 3600px;*/
+  
     height: 840px;
     max-width: 100%;
     text-align: center;
 }
 .header__block {
-    /*max-width: 1240px;*/
+  
     height: -webkit-fill-available;
     background: rgba(0, 0, 0, 0.5);
     margin-left: auto;
@@ -179,6 +180,10 @@ background-color: black;
 
 
 /*about*/
+
+.about {
+    padding-bottom: 60px;
+}
 
 .about__container {
    max-width: 1200px;
@@ -232,6 +237,9 @@ background-color: black;
 }
 
 /*work*/
+.work {
+    padding-bottom: 60px;
+}
 
 .work__container {
     max-width: 1200px;
@@ -313,7 +321,6 @@ margin-right: auto;
     color: var(--backcolor);
 }
 .work__text {
-    font-weight: 100;
     font-size: 18px;
     line-height: 1.55;
     padding-left: 20px;
@@ -333,6 +340,10 @@ margin-right: auto;
   }
 /*reviews*/
 
+.reviews {
+    padding-bottom: 60px;
+}
+
 .reviews__container {
     max-width: 1240px;
    padding-left: 50px;
@@ -342,6 +353,10 @@ margin-right: auto;
 }
 
 /*squad*/
+
+.squad {
+    padding-bottom: 60px;
+}
 
 .squad__container {
     max-width: 1200px;
@@ -382,6 +397,10 @@ margin-right: auto;
 }
 
 /*equipment*/
+
+.equipment {
+padding-bottom: 60px;
+}
 
 .equipment__container {
     max-width: 1240px;
@@ -518,6 +537,10 @@ label, a {
 
 /*photos*/
 
+.photos {
+    padding-bottom: 60px;
+}
+
 .photos__container {
     max-width: 1240px;
    padding-left: 50px;
@@ -652,6 +675,10 @@ label, a {
 }
 /*contacts*/
 
+.contacts {
+    padding-bottom: 60px;
+}
+
 .contacts__container {
     max-width: 1200px;
    padding-left: 20px;
@@ -746,8 +773,29 @@ label, a {
         display: none;
     }
     .header__nav {
-        display: none;
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: #ccc;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+    left: -100%;
+    transition: all 0.4s ease;
     }
+    .header__list {
+        display: block;
+    }
+    .header__list li {
+        margin: 40px 0px 40px 33px;
+        font-size: 14px;
+    }
+    
+    .header__nav.open-menu {
+        left: 0;
+    } 
+    
     .header__burger {
         display: block;
         position: relative;
@@ -779,6 +827,23 @@ label, a {
         left: 0;
         bottom: 0;
       }
+      
+      .header__burger.open-menu span {
+        opacity:0; 
+        transition: 0.5s; 
+    }
+    .header__burger.open-menu:before {
+        transform: rotate(-57deg);
+        top: 6px;
+        transition: 0.4s;
+    }
+    .header__burger.open-menu:after {
+        transform: rotate(38deg);
+        bottom: 16px;
+        transition: 0.4s;
+    }
+
+      
       .header__header {
           align-items: center;
       } 
