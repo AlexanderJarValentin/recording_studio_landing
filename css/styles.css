@@ -691,14 +691,14 @@ label, a {
 .block__contacts {
     align-items: center;
     margin-top: 40px;
-    max-width: 350px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .button__contacts {
-    width: 350px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -711,28 +711,28 @@ label, a {
 
 .telegram {
     text-transform: capitalize;
-    padding: 20px 137px;
+    padding: 20px 112px;
     background-color: #0088cc;
     color: white;
     font-size: 18px;
 }
 .wathap {
     text-transform: capitalize;
-    padding: 20px 143px;
+    padding: 20px 118px;
     background-color: #43d854;
     color: white;
     font-size: 18px;
 }
 .e-mail {
     text-transform: capitalize;
-    padding: 20px 152px;
+    padding: 20px 127px;
     background-color: #2b7296;
     color: white;
     font-size: 16px;
 }
 .telephone {
     text-transform: capitalize;
-    padding: 20px 118px;
+    padding: 20px 94px;
     background-color:var(--colordesc);
     color: white;
     font-size: 18px;
@@ -768,7 +768,55 @@ label, a {
     margin: auto;
 }
 
+@media (max-width:1200px) {
+    /*about*/
+    .about__block {
+        max-width: 1000px;
+    }
+    .about__text {
+        height: 245px;
+        width: 245px;
+    }
+    .about__img {
+        height: 245px;
+        width: 245px;
+    }
+    
+        
+}
+    @media (max-width:1024px) {
+        /*work*/
+        .work__list {
+            flex: 0 0 50%;
+        }
+        .work__servis {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /*about*/
+        .about__item {
+            flex-direction: column;
+        }
+        .about__list {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            }
+
+            .about__text {
+                height: 300px;
+                width: 300px;
+            }
+            .about__img {
+                height: 300px;
+                width: 300px;
+            }
+
+    }
+
+
 @media (max-width:768px) {
+    /*head*/
     .link__head {
         display: none;
     }
@@ -843,7 +891,6 @@ label, a {
         transition: 0.4s;
     }
 
-      
       .header__header {
           align-items: center;
       } 
@@ -853,4 +900,48 @@ label, a {
       .banner__container {
           padding-top: 77px;
       }
+      /*work*/
+      .work__list {
+        flex: 0 0 100%;
+      }
+      .item__squad {
+        flex: 1 1 80%;
+      }
+        /*about*/
+        .about__sistems {
+            display: block;
+        }
+        .about__text {
+            height: 350px;
+            width: 350px;
+        }
+        .about__img {
+            height:350px;
+            width: 350px;
+        }
+        
+        .about__sistems-768 {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .reviews__item::iframe {
+          width: 300px;
+          height: 150px;
+        }
+}
+@media (max-width:420px) {
+.head {
+    font-size: 56px;
+}
+.about__text {
+    height: 300px;
+    width: 300px;
+}
+.about__img {
+    height: 300px;
+    width: 300px;
+}
+.work__servis {
+    max-width: 300px;
+}
 }
