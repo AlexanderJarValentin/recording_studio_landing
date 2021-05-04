@@ -8,21 +8,26 @@ $(document).ready(function() {
 });
 
 $(".form-popup").click(function() {
-  $("#form").toggleClass('open__form'); 
+  $("#form").show(); 
   
 });
 
-$(".price-popup").click(function() {
-  $(".work__sale").toggleClass('open__sale') ;
-  //$(".btn__block").hide() ;
-  //$(".block__work").hide() ;
+$("#close").click(function() {
+  $("#form").hide(); 
+  
 });
 
-$(".hide-popup").click(function() {
+//$(".price-popup").click(function() {
+  //$(".work__sale").toggleClass('open__sale') ;
+  //$(".btn__block").hide() ;
+  //$(".block__work").hide() ;
+//});
+
+//$(".hide-popup").click(function() {
   //$(".work__sale").toggleClass('off__sale') ;
   //$(".btn__block").show() ;
  //$(".block__work").show() ;
-});
+//});
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
