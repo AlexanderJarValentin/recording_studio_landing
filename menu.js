@@ -1,33 +1,31 @@
 $(document).ready(function() {
     $('.header__burger').click(function() {
         $('.header__burger').toggleClass('open-menu');
-        $('.header__nav').toggleClass('open-menu');
-        
-        
+        $('.header__nav').toggleClass('open-menu');   
     });
 });
 
 $(".form-popup").click(function() {
   $("#form").show(); 
-  
-});
+  $("html").toggleClass("no-scroll");
+  });
+
 
 $("#close").click(function() {
   $("#form").hide(); 
-  
+  $("html").removeClass("no-scroll");
+
 });
 
-//$(".price-popup").click(function() {
-  //$(".work__sale").toggleClass('open__sale') ;
-  //$(".btn__block").hide() ;
-  //$(".block__work").hide() ;
-//});
+$(".price-popup").click(function() {
+  $("#sale-form").show();
+  $("html").toggleClass("no-scroll");
+});
 
-//$(".hide-popup").click(function() {
-  //$(".work__sale").toggleClass('off__sale') ;
-  //$(".btn__block").show() ;
- //$(".block__work").show() ;
-//});
+$(".hide-popup").click(function() {
+  $("#sale-form").hide () ;
+  $("html").removeClass("no-scroll");
+});
 
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters

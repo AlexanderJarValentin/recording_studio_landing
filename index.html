@@ -52,18 +52,7 @@
 <button class="btn btn__block form-popup">
     Забронировать время
 </button>
-<div class="background__form" id="form">
-<form >
-    <img src="../img/white-18dp/1x/outline_cancel_white_18dp.png" alt="" id="close">
-    <input type="name" name="firstname" placeholder="Имя"><br>
-    <input type="name" name="lastname" placeholder="Фамилия"><br>
-    <input type="date" name="date" placeholder="Дата"><br>
-    <input type="time" name="time" placeholder="Время"><br>
-    <input type="email" name="e-mail" placeholder="Почта"><br>
-    <input type="tel" name="phone" placeholder="+79999999"><br>
-    <button type="submit" class="btn head__form">Отправить</button>
-  </form>
-</div>
+
             </div>
         </div>
     </section>
@@ -138,24 +127,9 @@
     <div  id="servis" class="container work__container">
         <h2  class="heading heading__work">Услуги</h2>
         <div class="block__work">
-            <div class="work__sale">
             
-                <h2 class="heading sale">Стоимость услуг</h2>
-    
-                <ul class="work__list-sale">
-                  <li class="work__item-sale"><span>Запись вокала ... 800р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 900р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
-                  <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
-                </ul>
-                <button class="btn btn-green hide-popup">
-                    Скрыть стоимость
-                </button>
-            </div>
+            
+                
 
 <ul class="work__item">
     <li class="work__list">
@@ -534,6 +508,43 @@
         </div>
         </div>
     </footer>
+    <div class="background__form" id="form">
+        <form>
+            <div class="form-img"> 
+                <img src="../img/white-18dp/1x/outline_cancel_white_18dp.png" alt="" id="close">
+            </div>
+            
+            <input type="name" name="firstname" autofocus  placeholder="Имя"><br>
+            <input type="text" name="lastname"  autofocus placeholder="Фамилия"><br>
+            <input type="date" name="date"  autofocus placeholder="Дата"><br>
+            <input type="time" name="time" autofocus placeholder="Время"><br>
+            <input type="email" name="e-mail" autofocus placeholder="Почта"><br>
+            <input type="tel" name="phone" autofocus placeholder="+79999999"><br>
+            <button type="submit" class="btn head__form">Отправить</button>
+          </form>
+        </div>
+
+        <div class="background__sale" id="sale-form">
+            <div class="work__sale">
+    
+        <h2 class="heading sale">Стоимость услуг</h2>
+
+        <ul class="work__list-sale">
+          <li class="work__item-sale"><span>Запись вокала ... 800р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 900р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
+          <li class="work__item-sale"><span>Тюнинг вокала ... 800р/час</span></li>
+        </ul>
+        <button class="btn btn-green hide-popup">
+            Назад в меню
+        </button>
+    </div>
+</div>
+        
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
