@@ -956,7 +956,7 @@ label, a {
     .header__nav {
     display: block;
     position: absolute;
-    top: 55px;
+    top: 30px;
     left: 0;
     background: rgb(0, 0, 0);
     box-shadow: #ccc;
@@ -1031,7 +1031,7 @@ label, a {
           height: fit-content;
       }
       .banner__container {
-          padding-top: 76px;
+          padding-top: 49px;
       }
       
 

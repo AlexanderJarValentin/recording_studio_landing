@@ -1,9 +1,16 @@
 $(document).ready(function() {
     $('.header__burger').click(function() {
         $('.header__burger').toggleClass('open-menu');
-        $('.header__nav').toggleClass('open-menu');   
+        $('.header__nav').toggleClass('open-menu'); 
+       // $('.header__list').toggleClass('open-menu'); 
+       // $('.header__item').toggleClass('open-menu');
     });
 });
+
+$(".header__list"). click(function() {
+  $('.header__burger').toggleClass('open-menu');
+  $('.header__nav').toggleClass('open-menu');
+})
 
 $(".form-popup").click(function() {
   $("#form").show(); 
