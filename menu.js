@@ -15,13 +15,13 @@ $(".header__list"). click(function() {
 $(".form-popup").click(function() {
   $("#form").show(); 
   $("html").toggleClass("no-scroll");
+
   });
 
 
 $("#close").click(function() {
   $("#form").hide(); 
   $("html").removeClass("no-scroll");
-
 });
 
 $(".price-popup").click(function() {
